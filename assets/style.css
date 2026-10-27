@@ -1,4 +1,5 @@
 :root{
+    --logo-bg:#fff;
     --bg:#EEF3F7;
     --surface:#FFFFFF;
     --ink:#0F2A43; 
@@ -15,8 +16,8 @@ color-scheme:light
 }
 
 @media (prefers-color-scheme:dark){
-    :root:not([data-theme="light"])
-    {   --bg:#0C1B2B;
+    :root:not([data-theme="light"]){   
+        --bg:#0C1B2B;
         --surface:#132a40;
         --ink:#E8F0F7;
         --muted:#9FB4C7;
@@ -98,7 +99,6 @@ body::before{
     width: 155px;
     height: 97px;
     border-radius:10px;
-    background:var(--logo-bg);
     padding:3px;
     object-fit:contain
 }
@@ -356,6 +356,7 @@ textarea{
     margin-top:8px;
     font-weight:600;
 }
+
 
 footer{
     border-top:1px solid var(--line);
